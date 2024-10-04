@@ -1,0 +1,34 @@
+
+
+.scrolling-bar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fc2f00; 
+    height: 60px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .scrolling-content {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .scrolling-content span {
+    color: white; 
+    font-size: 20px; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    padding: 0 30px; 
+  }
+  
+ 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
