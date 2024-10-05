@@ -1,18 +1,17 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
-import Whyuse from "./components/Whyuse";
-import ScrollingBar from "./components/ScrollingBar";
-import HowToUse from "./components/HowToUse";
+import React from 'react';
+import { HowToUse, Navbar, Slider, ScrollingBar, WhyUse, BusinessSolutions, JoinUs, Footer } from './components';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Slider />
-      <Whyuse />
+      <WhyUse />
       <ScrollingBar />
       <HowToUse />
+      <BusinessSolutions />
+      <JoinUs />
+      <Footer />
     </div>
   );
 }

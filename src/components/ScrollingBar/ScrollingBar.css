@@ -1,0 +1,41 @@
+/* src/styles/ScrollingBar.css */
+
+.scrolling-bar {
+  overflow: hidden;
+  background-color: #8d0a1f;
+  width: 100%;
+  position: relative;
+}
+
+.scrolling-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 50s linear infinite;
+}
+
+.scrolling-content span {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 30px 10px 30px;
+  white-space: nowrap;
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .scrolling-content span {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
