@@ -1,5 +1,15 @@
-import React from 'react';
-import { HowToUse, Navbar, Slider, ScrollingBar, WhyUse, BusinessSolutions, JoinUs, Footer } from './components';
+import React from "react";
+import {
+  HowToUse,
+  Navbar,
+  Slider,
+  ScrollingBar,
+  WhyUse,
+  BusinessSolutions,
+  JoinUs,
+  Footer,
+  Help,
+} from "./components";
 
 function App() {
   return (
@@ -11,6 +21,7 @@ function App() {
       <HowToUse />
       <BusinessSolutions />
       <JoinUs />
+      <Help />
       <Footer />
     </div>
   );
