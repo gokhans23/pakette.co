@@ -1,0 +1,95 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 70%;
+  min-height: 700px;
+}
+
+.slider-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.slider-title {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px; /* Reduce bottom margin */
+  font-size: 3rem;
+  max-width: 500px; /* Limit the width of the title */
+}
+
+.line-one,
+.line-two {
+  display: block;
+}
+
+.slider-buttons {
+  display: flex;
+  gap: 20px; /* Reduced gap between buttons */
+}
+
+.slider-btn {
+  border: 2px solid #333;
+  color: #333;
+  background-color: transparent;
+  padding: 12px 25px; /* Adjusted padding for a balanced look */
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.slider-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.slider-image {
+  flex: 1;
+  max-width: 500px; /* Limit the size of the image */
+  margin-left: 20px; /* Add some margin to the left */
+}
+
+.slider-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .slider {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px; /* Adjust padding on smaller screens */
+    min-height: 500px;
+  }
+
+  .slider-title {
+    font-size: 2.5rem;
+    max-width: 100%; /* Allow the title to take up more space */
+    text-align: center;
+  }
+
+  .slider-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .slider-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .slider-image {
+    margin-top: 20px;
+  }
+}
+
+

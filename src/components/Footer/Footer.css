@@ -1,0 +1,165 @@
+.footer-container {
+  background-color: #8d0a1f;
+  padding: 20px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo section */
+.footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+/* Center section with links, icons, and store buttons */
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 2;
+}
+
+/* Footer links */
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Icons */
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* Store buttons */
+.footer-store {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-app-store-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-download-btn {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.footer-download-btn:hover {
+  background-color: white;
+  color: #333;
+}
+
+.store-logo {
+  width: 150px;
+}
+
+/* Bringing the logos closer to the edges */
+.footer-logo:first-child {
+  justify-content: flex-start;
+}
+
+.footer-logo:last-child {
+  justify-content: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Reduce padding for mobile screens */
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-center {
+    padding: 0 20px; /* Less padding on mobile */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    margin: 10px 0;
+  }
+
+  .footer-icons {
+    font-size: 24px; /* Slightly smaller icons for mobile */
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-app-store-buttons {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .footer-download-btn {
+    padding: 8px 15px; /* Smaller button padding for mobile */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-download-btn {
+    padding: 5px 10px; /* Further reduce padding on smaller screens */
+    font-size: 0.8rem;
+  }
+
+  .footer-logo img {
+    width: 60px;
+  }
+
+  .footer-icons {
+    font-size: 20px; /* Smaller icon size for very small screens */
+    gap: 10px;
+  }
+}
